@@ -7,15 +7,11 @@ import { Notification } from './Notification/Notification';
 import { Container } from './App.styled';
 
 export class App extends Component {
-  static defaultProps = {};
-
   state = {
     good: 0,
     neutral: 0,
     bad: 0,
   };
-
-  static propTypes = {};
 
   onLeaveFeedback = event => {
     this.setState(prevState => {
